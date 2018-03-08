@@ -2,6 +2,10 @@
 
 The connector does not need any code. It just leverages the Microsoft Graph API with the help of an Open API 2.0 specification (swagger file).
 
+![Image of the create Teams action](img:http://blog.leitwolf.io/content/images/2018/03/create-team.PNG])
+
+Blog post: http://blog.leitwolf.io/create-a-microsoft-team-with-flow-custom-connector/ 
+
 ## Installation
 
 ### 1. Register App in Azure Portal
@@ -20,12 +24,12 @@ The connector does not need any code. It just leverages the Microsoft Graph API 
     * Client secrret -> paste from step 1
     * Authorization URL: "https://login.microsoftonline.com/_yourtenant_.onmicrosoft.com/oauth2/v2.0/authorize"
     * Token URL: "https://login.microsoftonline.com/_yourtenant_.onmicrosoft.com/oauth2/v2.0/token"
-    * Refresh URL: ""https://login.microsoftonline.com/_yourtenant_.onmicrosoft.com/oauth2/v2.0/refresh"
+    * Refresh URL: ""https://login.microsoftonline.com/_yourtenant_.onmicrosoft.com/oauth2/v2.0/token"
     * Scope: "Group.ReadWrite.All"
     * Create the connector 
     * Navigate to the secuirty tab again and copy the "Redirect URL" and register URL as Reply URL in your Azure AD App within the Azure Portal 
-### 3. Create a connection and try the action in flow. 
-First you have to create an Unified Group before you can create a Team. Use the Azure AD - Create Group action to create Unfified Group and use the ID of this group to create Team.
+### 3. Try it!
+Bevore you can create a team you have to create an unfiied group. Use the "Azure AD - Create Group" action to create Unfified Group and use the ID to create the Team.
 
 
   
