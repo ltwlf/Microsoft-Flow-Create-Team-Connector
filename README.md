@@ -2,7 +2,7 @@
 
 The connector does not need any code. It just leverages the Microsoft Graph API with the help of an Open API 2.0 specification (swagger file).
 
-## Install
+## Installation
 
 ### 1. Register App in Azure Portal
   * Regiser an new Azure AD App in you Azure AD
