@@ -29,7 +29,7 @@ Blog post: http://blog.leitwolf.io/create-a-microsoft-team-with-flow-custom-conn
     * Create the connector 
     * Navigate to the secuirty tab again and copy the "Redirect URL" and register URL as Reply URL in your Azure AD App within the Azure Portal 
 ### 3. Try it!
-Bevore you can create a team you have to create an unfiied group. Use the "Azure AD - Create Group" action to create Unfified Group and use the ID to create the Team.
+Before you can create a team you have to create an unfiied group. Use the "Azure AD - Create Group" action to create Unfified Group and use the ID to create the Team.
 
 
   
