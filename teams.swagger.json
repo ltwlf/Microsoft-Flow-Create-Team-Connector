@@ -51,6 +51,39 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "guestSettings": {
+                                    "type": "object",
+                                    "properties": {
+                                        "allowCreateUpdateChannels": {
+                                            "type": "boolean",
+                                            "description": "Allow create and update channels",
+                                            "x-ms-summary": "allowCreateUpdateChannels",
+                                            "title": "Allow create and update channels",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowDeleteChannels": {
+                                            "type": "boolean",
+                                            "description": "Allow delete channels",
+                                            "x-ms-summary": "allowDeleteChannels",
+                                            "title": "Allow delete channels",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        }
+                                    },
+                                    "description": "Guests",
+                                    "x-ms-summary": "Guests",
+                                    "required": [
+                                    ]
+                                },
                                 "memberSettings": {
                                     "type": "object",
                                     "properties": {
@@ -65,12 +98,59 @@
                                                 "false"
                                             ],
                                             "default": "true"
+                                        },
+                                        "allowDeleteChannels": {
+                                            "type": "boolean",
+                                            "description": "Allow delete channels",
+                                            "x-ms-summary": "allowDeleteChannels",
+                                            "title": "Allow delete channels",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowAddRemoveApps": {
+                                            "type": "boolean",
+                                            "description": "Allow add and remove apps",
+                                            "x-ms-summary": "allowAddRemoveApps",
+                                            "title": "Allow add and remove apps",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowCreateUpdateRemoveTabs": {
+                                            "type": "boolean",
+                                            "description": "Allow create, add and remove apps",
+                                            "x-ms-summary": "allowCreateUpdateRemoveTabs",
+                                            "title": "Allow create, add and remove apps",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowCreateUpdateRemoveConnectors": {
+                                            "type": "boolean",
+                                            "description": "Allow create, add and update connectors",
+                                            "x-ms-summary": "allowCreateUpdateRemoveConnectors",
+                                            "title": "Allow create, add and update connectors",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
                                         }
                                     },
-                                    "description": "",
+                                    "description": "Members",
                                     "x-ms-summary": "",
                                     "required": [
-                                        "allowCreateUpdateChannels"
                                     ]
                                 },
                                 "messagingSettings": {
@@ -99,12 +179,47 @@
                                                 "false"
                                             ],
                                             "default": "true"
+                                        },
+                                        "allowOwnerDeleteMessages": {
+                                            "type": "boolean",
+                                            "description": "Allow owners to delete messages",
+                                            "x-ms-summary": "allowOwnerDeleteMessages",
+                                            "title": "Allow owners to delete messages",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowTeamMentions": {
+                                            "type": "boolean",
+                                            "description": "Allow team mentions",
+                                            "x-ms-summary": "allowTeamMentions",
+                                            "title": "Allow team mentions",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
+                                        },
+                                        "allowChannelMentions": {
+                                            "type": "boolean",
+                                            "description": "Allow channel mentions",
+                                            "x-ms-summary": "allowChannelMentions",
+                                            "title": "Allow channel mentions",
+                                            "x-ms-visibility": "advanced",
+                                            "enum": [
+                                                "true",
+                                                "false"
+                                            ],
+                                            "default": "true"
                                         }
                                     },
-                                    "description": "",
-                                    "x-ms-summary": "",
+                                    "description": "Settings",
+                                    "x-ms-summary": "Settings",
                                     "required": [
-                                        "allowUserDeleteMessages"
                                     ]
                                 },
                                 "funSettings": {
@@ -129,19 +244,32 @@
                                             "title": "Giphy Content Rating",
                                             "x-ms-visibility": "advanced",
                                             "default": "strict"
+                                        },
+                                        "allowStickersAndMemes": {
+                                            "type": "string",
+                                            "description": "Allow stickers and memes",
+                                            "x-ms-summary": "allowStickersAndMemes",
+                                            "title": "Allow stickers and memes",
+                                            "x-ms-visibility": "advanced",
+                                            "default": "strict"
+                                        },
+                                        "allowCustomMemes": {
+                                            "type": "string",
+                                            "description": "Allow custom memes",
+                                            "x-ms-summary": "allowCustomMemes",
+                                            "title": "Allow custom memes",
+                                            "x-ms-visibility": "advanced",
+                                            "default": "strict"
                                         }
+
                                     },
                                     "description": "",
                                     "x-ms-summary": "",
                                     "required": [
-                                        "allowGiphy"
                                     ]
                                 }
                             },
                             "required": [
-                                "funSettings",
-                                "memberSettings",
-                                "messagingSettings"
                             ]
                         }
                     }
