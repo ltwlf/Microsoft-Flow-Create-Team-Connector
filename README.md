@@ -2,7 +2,7 @@
 
 The connector does not need any code. It just leverages the Microsoft Graph API with the help of an Open API 2.0 specification (swagger file).
 
-![Image of the create Teams action](img:http://blog.leitwolf.io/content/images/2018/03/create-team.PNG])
+![Image of the create Teams action](http://blog.leitwolf.io/content/images/2018/03/create-team.PNG])
 
 Blog post: http://blog.leitwolf.io/create-a-microsoft-team-with-flow-custom-connector/ 
 
