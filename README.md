@@ -24,7 +24,8 @@ The connector does not need any code. It just leverages the Microsoft Graph API 
     * Scope: "Group.ReadWrite.All"
     * Create the connector 
     * Navigate to the secuirty tab again and copy the "Redirect URL" and register URL as Reply URL in your Azure AD App within the Azure Portal 
-### 3. Create a connection and try the action in flow. You have first to create an Unified Group before you can create a Team. Use the Azure AD - Create Group action to create Unfified Group and use the ID of this group to create Team.
+### 3. Create a connection and try the action in flow. 
+First you have to create an Unified Group before you can create a Team. Use the Azure AD - Create Group action to create Unfified Group and use the ID of this group to create Team.
 
 
   
