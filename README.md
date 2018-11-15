@@ -10,7 +10,7 @@ Blog post: http://blog.leitwolf.io/create-a-microsoft-team-with-flow-custom-conn
 
 ### 1. Register App in Azure Portal
   * Regiser an new Azure AD App in you Azure AD
-  * Add the Microsoft Graph permission for delegated "Read and write all groups" (Group.ReadWrite.All)
+  * Add the Microsoft Graph permission for delegated "Read and write all groups" (Group.ReadWrite.All) and "Access user's data anytime" (offline_access).
   * Copy the application id / client id
   * Generate and copy a key / app secret
 ### 2. Install Custom Connector
